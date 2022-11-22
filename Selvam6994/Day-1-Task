@@ -1,0 +1,42 @@
+HTTP:
+HTTP (Hypertext Transfer Protocol) is a set of rules that runs on top of the TCP/IP suite of protocols and defines how files are to be transferred between clients and servers on the world wide web.
+
+1. Difference between HTTP1.1 vs HTTP2
+HTTP/1:
+The concept of headers both for requests (from the client) as well as responses (from servers) was introduced.
+The use of headers such as GET, POST, and HEAD added extended flexibility, none of which was possible with the earlier version.
+It allowed a single request/response for every TCP connection.
+HTTP/1.1 loads resource one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.
+Before sending the request and the response there is a TCP connection established between the client & server.
+Again you make a request to the server for an image img.jpg & the server gives a response as an image img.jpg.
+
+HTTP/2:
+HTTP/2 developed over the SPDY protocol.
+HTTP/2 works on the binary framing layers instead of textual and converts all the messages into binary format.
+It works on fully multiplexed that is one TCP connection is used for multiple requests.
+HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource.
+HTTP/2 uses HPACK which is used to split data from the header.
+The server sends all the other files like CSS & JS without the request of the client using the PUSH frame.
+
+2. Object:
+An object is a standalone entity, with properties and type.
+It is the most important data type and forms the building blocks for modern JavaScript.
+Objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs.
+These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
+For Eg. If your object is a student, it will have properties like name, age, address, id, etc, and methods like updateAddress, updateName, etc.
+
+Syntax:
+ Object={
+property1 = value1,
+property2 = value2,
+.
+.
+propertyN = valueN
+}
+
+Example:
+const coffeeCup = {
+color: 'Black',
+design: 'Solid'
+};
